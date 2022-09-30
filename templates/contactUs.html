@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <style>
+            nav div {
+                width: 100%;
+                height: 70px;
+                line-height: 70px;
+            }
+    
+            nav div ul {
+                list-style: none;
+                text-align: center;
+            }
+    
+            nav div ul li {
+                display: inline-block;
+                width: 150px;
+                position: relative;
+                z-index: 99;
+            }
+    
+            nav div ul li a {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                display: block;
+            }
+    
+            nav div ul li a:hover {
+                color: var(--primary);
+            }
+    
+            nav div ul li i {
+                color: var(--primary);
+                margin: 0px 5px;
+            }
+    
+            nav div ul ul {
+                position: absolute;
+                top: 70px;
+                left: 0;
+                display: none;
+            }
+    
+            nav div ul ul li {
+                background-color: white;
+                border-bottom: 1px solid var(--primary);
+            }
+    
+            nav div ul li:hover>ul {
+                display: block;
+            }
+        </style>
+    <title>Contact|Smart Shop</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="../index.html">Smart Shop</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Boy</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Accessories</a>
+                </li>
+
+                <li><a href="#" class="nav-link"><i class="fa fa-anchor"></i>Toys<i class="fa fa-caret-down"></i></a>
+                    <ul>
+                        <li><a href="../toys/woodToys.html"><i class="fa fa-clipboard"></i>Wooden</a></li>
+                        <li><a href="../toys/plasticToys.html"><i class="fa fa-circle-o"></i>Plastic</a></li>
+                        <li><a href="../toys/ironToys.html"><i class="fa fa-gavel"></i>Iron</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contactUs.html">Contact Us</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="about.html"><i class="fa fa-clipboard"></i>About Us</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="container my-3">
+        <h2>Smart Shop Contact Form</h2>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" class="form-control" id="name" name='name' placeholder="Enter Your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Email *</label>
+                <input type="email" class="form-control" id="email" name='email' placeholder="Enter Your Email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Phone *</label>
+                <input type="tel" class="form-control" id="phone" name='phone' placeholder="Enter Your Phone Number"
+                    required>
+            </div>
+
+
+            <div class="form-group">
+                <label for="desc">How May We Help You?</label>
+                <textarea class="form-control" id="desc" name='desc' rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-success" value="Submit" onclick="success()">Submit</button>
+        </form>
+    </div>
+    <script>
+        function success() {
+            alert('Thanks for contacting us. We will get back to you soon!');
+            window.location.href = "../index.html";
+        }
+    </script>
+</body>
+
+</html>
